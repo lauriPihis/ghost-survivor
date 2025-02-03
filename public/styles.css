@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(161, 17, 17);
+    font-family: 'roboto', Arial, sans-serif;
+    color: rgb(196, 196, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro-screen{
+    background-image: url("images/background.png");
+}
+
+button{
+    background-color: darkgrey;
+    color: rgb(161, 17, 17);
+    padding: 20px;
+    border-radius: 5px;
+}
