@@ -20,28 +20,48 @@ button{
 
 #game-screen{
     display: none;
-    background-image: url("images/background.png");
-    width: 40vw;
-    height: 40vw;
-    display: grid;
-
 }
 #game-board{
+    background-image: url("images/background.png");
+    width: fit-content;
+    height: fit-content;
+    background-size: cover;
     display: grid;
-    gap: 0px;
 }
 
-.cell {
+.cell{
     width: 50px;
     height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
 }
-  
-.wall {
-    background-image: url('images/wall.png');
-    width: 50px;
-    height: 50px;
+
+.wall{
+    background-image: url("images/wall.png");
     background-size: cover;
+}
+
+.player{
+    background-image: url("images/player.png");
+    background-size: cover;
+}
+
+.monster{
+    background-image: url("images/hornmonster.png");
+    background-size: cover;
+}
+
+.bullet{
+    background-color: rgb(81, 255, 246);
+    border-radius: 50%;
+    animation: fadeOut 0.5s ease-out;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#score-board{
+    color: rgb(0, 255, 242);
+    font-size: 20px
 }
